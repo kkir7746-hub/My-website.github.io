@@ -2,10 +2,27 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Мой сайт</title>
+<title>Пример</title>
+
+<style>
+body { font-family: Arial; }
+button { padding: 10px; }
+</style>
+
 </head>
-<body style="font-family:Arial; margin:40px;">
-<h1>Привет 👋</h1>
-<p>Это мой сайт.</p>
+<body>
+
+<h1>Мой сайт</h1>
+
+<p id="info">Здесь будет текст</p>
+
+<button onclick="addText()">Добавить текст</button>
+
+<script>
+function addText() {
+    document.getElementById("info").innerText = "Ты разобрался в основах!";
+}
+</script>
+
 </body>
 </html>
